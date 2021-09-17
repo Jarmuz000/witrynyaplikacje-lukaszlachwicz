@@ -19,7 +19,7 @@ function okno_zamknij_Lachwicz()
 var D1_Lac=prompt("D1_Lac=","");
 var D2_Lac=prompt("D2_Lac=","");
 var roznica;
-roznica=(D2_Lac-D1_Lac)*86400;
+roznica=|(D2_Lac-D1_Lac)*86400;|
 document.write("różnica między "+D1_Lac+" marca a "+D2_Lac+" marca to "+roznica+" sekund<br>");
 </script>
 <input type="button" value="zamknij okno" onclick="okno_zamknij_Lachwicz('')"/>
