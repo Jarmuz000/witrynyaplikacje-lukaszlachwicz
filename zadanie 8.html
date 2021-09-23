@@ -15,13 +15,14 @@ function okno_zamknij_Lachwicz()
  </script>
 </head>
 <body>
+   <p>
 <script language="JavaScript">
-var D1_Lac=prompt("D1_Lac=","");
-var D2_Lac=prompt("D2_Lac=","");
+var D1_Lac=prompt("liczba1=","");
+var D2_Lac=prompt("liczba2=","");
 var roznica;
-roznica=|(D2_Lac-D1_Lac)*86400|;
+roznica=(D2_Lac-D1_Lac)*86400;
 document.write("różnica między "+D1_Lac+" marca a "+D2_Lac+" marca to "+roznica+" sekund<br>");
-</script>
+</script></p>
 <input type="button" value="zamknij okno" onclick="okno_zamknij_Lachwicz('')"/>
 </body>
 </html>
