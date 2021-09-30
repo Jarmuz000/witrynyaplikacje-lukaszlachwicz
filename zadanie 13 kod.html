@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie 13 kod</title>
+    <script type="text/javascript">
+        function okno_zamknij_Lachwicz()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea rows=30 cols=100>
+        <hmtl>
+            <head>
+            <meta charset="utf-8">
+            function okno_zamknij_Lachwicz()
+            {
+            window.close()
+            }
+            
+            </head>
+            <body>
+                <script language="JavaScript">
+                function Lachwicz(){
+                var A=prompt("A=","");
+                document.write("<font color=dark red size=7>A="+A+"</font><br>")
+                var B=prompt("B=",);
+                document.write("<font color=dark red size=7>B="+B+"</font><br>")
+                var mnozenie;
+                mnozenie=(A*A*A)+3*(A*A)*B+3*A*(B*B)+(B*B*B);
+                document.write("<font color=dark red size=7>("+A+"^3+"+B+"^3)="+A+"^3+3*"+A+"^2*"+B+"+3*"+A+"*"+B+"^2+"+B+"^3="+mnozenie+"</font>");}
+            </script>
+                <input type="button" value="podaj A i B" onclick="Lachwicz()">
+                <input type="button" value="zamknij" onclick="okno_zamknij_Lachwicz('')"/>
+            </body>
+            </html>
+    </textarea>
+    <input type="button" value="zamknij" onclick="okno_zamknij_Lachwicz('')"/>
+</body>
+</html>
