@@ -1,0 +1,40 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie 17</title>
+<script  language="JavaScript">
+function okno_zamknij_Lachwicz()
+     {
+     window.close()
+     }
+	 </script>
+</head>
+<body>
+<script language="JavaScript">
+var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+        function odejmowanie_Lac(a,b)
+ {
+    return a-b;
+ }
+ document.write("roznica="+odejmowanie_Lac(a,b)+"<br>");
+         function mnozenie_Lac(a,b)
+ {
+    return a*b;
+ }
+ document.write("iloczyn="+mnozenie_Lac(a,b)+"<br>");
+         function od_kwadrat_Lac(a,b)
+ {
+    return a*a;
+	return b*b;
+ }
+ document.write("kwadrat z b="+od_kwadrat_Lac(b)+"<br> kwadrat z a="+od_kwadrat_Lac(a)+"<br>");
+          function reszta_z_dzielenia_a_przez_b_Lac(a,b)
+ {
+    return a%b;
+ }
+ document.write("reszta z dzielenia="+reszta_z_dzielenia_a_przez_b_Lac(a,b)+"<br>");
+ </script>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_Lachwicz('')"/>
+</body>
+</html>
