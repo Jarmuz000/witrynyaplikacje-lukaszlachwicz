@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>zadanie 21 kod</title>
+    <script type="text/javascript">
+        function okno_zamknij_Lachwicz()
+        {
+        window.close()
+        }
+        </script>
+</head>
+<body>
+    <textarea rows=30 cols=100>
+        <html>
+<head>
+    <meta charset="utf-8">
+<title>
+ zadanie 21
+</title>
+ <script language="JavaScript">
+function przeciw_Lachwicz(a_lac,b_lac)
+{
+ a=parseFloat(a_lac)
+ b=parseFloat(b_lac)
+ c=Math.sqrt(a*a+b*b)
+ document.getElementsByName('Bok')[0].value=c.toFixed(2);
+}
+function kat_Lachwicz(a_lac,b_lac)
+{
+ a=parseFloat(a_lac)
+ b=parseFloat(b_lac)
+ kat=Math.atan(a/b)*180/Math.PI
+ document.getElementsByName('kat')[0].value=kat.toFixed(2);
+}
+ </script>
+</head>
+<body>
+Obliczanie nachylenia i długości drabiny
+<br> <br>
+<form name="formularz" action="..." onsubmit="przeciw_Lachwicz(this.bok_a.value,this.bok_b.value);
+kat_Lachwicz(this.bok_a.value,this.bok_b.value);return false">
+Podaj bok a=
+<input size="6" name="bok_a">
+Podaj bok b=
+<input size="6" name="bok_b">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+dlugosc drabiny ->
+<input size="6" name="Bok">
+kat ->
+<input size="6" name="kat">
+</form>
+</body>
+</html>
+
+    </textarea>
+    <input type="button" value="zamknij" onclick="okno_zamknij_Lachwicz('')"/>
+</body>
+</html>
