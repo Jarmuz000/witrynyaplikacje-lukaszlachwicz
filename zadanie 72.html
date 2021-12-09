@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie 72</title>
+</head>
+<body>
+<script type="text/javascript">
+    function okno_zamknij_Lachwicz()
+        {
+        window.close()
+        }
+l1_t_Lac = prompt("podaj liczbe","");
+l2_t_Lac = prompt("podaj liczbe X2","");
+pocz_Lac = prompt("wartosc poczatkowa","")
+tekst_Lac = prompt("dowolny tekst","");
+a=parseFloat(l1_t_Lac);
+b=parseFloat(l2_t_Lac);
+c=parseFloat(pocz_Lac);
+if(a<20)
+{a=20;}
+else if(a>60)
+{a=60;}
+if(b<20)
+{b=20;}
+else if(b>60)
+{b=60;}
+if(a==b)
+{
+    a++;
+}
+while(c<=100 && c >= 0)
+{
+    document.write("<p style=\"font-size:"+c+"px; color: black;\"><br>"+tekst_Lac+"<br></p>");
+    if(a>b)
+    {
+       c=5+c;
+    }
+    else
+    {
+        c-=5;
+    }
+    
+}
+</script>
+<input type="button" value="zamknij" onclick="okno_zamknij_Lachwicz('')"/>
+</body>
+</html>

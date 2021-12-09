@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>zadanie76</title>
+</head>
+<body>
+<script language="JavaScript">
+    function okno_zamknij_Lachwicz()
+        {
+        window.close()
+        }
+    a=prompt("podaj a","");
+    b=prompt("podaj b","");
+    aa=parseFloat(a);
+    bb=parseFloat(b);
+    if(a>b)
+    {
+        document.write("<font color=blue size=3>");
+        for(i=a;i>=b;i--)
+        {
+            if(i%2==1)
+            {
+               document.write(i+"<br>");
+            }
+        }
+    }
+    else if(a<b)
+    {
+        document.write("<font color=green size=6>");
+       for(i=a;i<=b;i++)
+       {
+           if(i%2==1)
+           {
+             document.write(i+"<br>");
+           }
+       }
+    }
+    else
+    {
+          confirm("brak obliczen!");
+    }
+    </script>
+        <input type="button" value="zamknij" onclick="okno_zamknij_Lachwicz('')"/>
+</body>
+</html>
